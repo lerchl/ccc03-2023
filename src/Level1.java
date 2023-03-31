@@ -12,6 +12,11 @@ public class Level1 extends Solver {
 
     @Override
     protected List<String> solve(List<String> input) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        input.remove(0);
+        return input.stream().map(str -> {
+            var left = str.charAt(0);
+            var right = str.charAt(1);
+            return Character.toString(BattleLogics.fight(left, right));
+        }).toList();
     }
 }
