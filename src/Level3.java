@@ -59,14 +59,4 @@ public class Level3 extends Solver {
             return sb.toString();
         }).toList();
     }
-
-    // private String round(String input) {
-    //     StringBuilder sb = new StringBuilder();
-    //     for (int i = 0; i < input.length() - 1; i += 2) {
-    //         var left = input.charAt(i);
-    //         var right = input.charAt(i + 1);
-    //         sb.append(BattleLogics.fight(left, right));
-    //     }
-    //     return sb.toString();
-    // }
 }
